@@ -1,33 +1,110 @@
 <!doctype html>
 <html>
-<title>
+<title >
     Arnav Agarwal Career Portfolio
 </title>
-<head>  
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
 <style>
-    body{
+body{
         text-align: center;
-       background-color:black;
+       background-image: url("Background 4.jpg");
+       opacity: 0.9;
+    }
+    .btn {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+  background-color: #2196F3;
+  color: white;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+.dropdown {
+    margin-bottom: 0;
+  position: absolute;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  z-index: 1;
+  margin-top: 0;
+}
+.dropdown-content h3{
+    position:absolute;
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content span:hover {
+   
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    margin-top: 0;
+  display: block;
+}
+.btn:hover, .dropdown:hover .btn {
+    position: relative;
+  background-color: #0b7dda;
+}
+.drop{
+    margin-top: 0;
+    position: relative;
+    display: inline-block;
+    background-color: #ddd;
+}
+.topnav {
+    background-color: lightblue;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+  overflow: hidden;
+  
+}
+    .topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 10px 10px;
+  font-size: 20px;
+  text-decoration: none;
+    }
+    .topnav a:active {
+  background-color:blue;
+  color: white;
+    }
+        #connect{
+        padding-right: end;
     }
     h1{
-        background-color: cyan;
+        background-color: none;
         font-family:'Courier New'; 
     }  
     h2{
         font-family: cursive;
-        background-color:cyan;
+        background-color:none;
     }
     h3{
-        background-color: cyan;
-    }    
-
-    p{
-        background-color: mistyrose;
-        font-size: 25px;
+        background-color:none;
     }
-    ul{
-        list-style-type: none;
-        background-color: mistyrose;
+    figcaption{
+        font-size: 25px;
+        font-family: 'Courier New';
+    }
+    .navheadings{
+        font-size: 3rem;
+        font-style: oblique;
+    }   
+    p{
+        text-align:left;
+        word-spacing: 0.5rem;
+        letter-spacing: 0.005rem;
+        background-color:none;
         font-size: 25px;
     }
     hr{
@@ -37,10 +114,14 @@
     }
     #pic{
         height: 18rem;
-        border: 1.5rem solid grey;
+        border: 1.5rem solid lightblue;
+        margin-bottom: 5rem;
+
     }
-    #gt{
-        background-color: ivory;
+    .name{
+        margin-top: 0;
+        font-size: 4rem;
+        font-style: oblique;
     }
     .padr{
         padding-right: 2.5rem;
@@ -54,49 +135,118 @@
     #b{
         margin-bottom: 0;
     }
+    #footer1{
+        text-align:center;
+    }
+    .footer2{
+        text-align: left;
+    }
 </style>
-<body >
+<body id="top" >
+   <div class="topnav">
+  <a  href="#top"><b>Home</b></a> 
+  <a  href="#Introduction"><b>Introduction</b></a>
+  <a  href="#Education"><b>Education</b></a>
+  <a  href="#Skills"><b>Skills</b></a>
+  <a  href="#Achievements"><b>Achievements</b></a>
+  <a  id="connect" href="#Connect With Me"><b>Connect</b></a>
+</div>
+<br><br><br>
+<h1 class="navheadings">
+    <b>Hi! There...</b>
+</h1>
 <img src="pic.jpg" id="pic" alt="Arnav Agarwal Profile Picture"></td>
 </head>
-<h1 id="b">
+<h1 class="name">
     <b>Arnav Agarwal</b>
 </h1>
-<h3 id="a">
+<h3 class="name">
      Web developer 
 </h3>
-<hr >
-<h2>
+<h2 class="navheadings" id="Introduction">
     INTRODUCTION
 </h2>
 <p>
-    <b><i>This is Arnav Agarwal,an alumini of St. Francis' College,Lucknow. I am currently persuing my BTech in CSE from Ajay
-    Kumar Garg Engineering College,Ghaziabad. I am always attracted by the unlimited possibilities that a particular
-    problem holds to get itself solved and discovering new and efficient ways to do so is what I aim to do. I believe that
-    every individual has something to offer me as a lesson and I try to search that lesson and keep learning.I am also a bibliophile 
-    and like to pen down my thoughts as a writer as part of my hobby.</i></b>
+    <b><i>This is Arnav Agarwal, an alumini of St. Francis' College, Lucknow. I am currently persuing my BTech in CSE from Ajay Kumar Garg Engineering College, Ghaziabad. I am a learning web developer and a competitive programmer. I am also a bibliophile and like to pen down my thoughts.</i></b>
 </p>
-<hr>
-<h2>
+<br>
+<h2 class="navheadings" id="Education">
+    Education
+</h2>
+<table>
+    <tbody>
+        <tr>
+            <img src="SFC.jpg" alt="St. Francis' Pic" width="400" height="400">
+            <figcaption>
+                <b> St. Francis' College, Lucknow </b>
+            </figcaption>
+            <br><br>
+            <img src="Akgec Logo.png" alt="Akgec Logo" width="400" height="400">
+            <figcaption>
+                <b> Ajay Kumar Garg Engineering College, Ghaziabad <b>
+            </figcaption>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+<h2 class="navheadings" id="Skills">
     SKILLS 
 </h2>
-<ul>
-    <li>Programing language Java</li>
-    <li>Programing language C</li>
-    <li>Basics of HTML</li>
-    <li>Basics of CSS</li>
-    <li>Competetive Programming in Java</li>
-</ul><hr>
-<h2>
+<table>
+    <tbody>
+        <tr>
+            <img src="Java Logo.png" alt="Java Logo" width="50" height="50">
+            <figcaption>
+                <b> Java </b>
+            </figcaption>
+            <br>
+            <img src="C Logo.png" alt="C Logo" width="50" height="50">
+            <figcaption>
+                <b> C <b>
+            </figcaption>
+            <br>
+        </tr>
+        <tr>
+            <img src="HTML Logo.png" alt="Java Logo" width="50" height="50">
+            <figcaption>
+                <b> HTML </b>
+            </figcaption>
+            <br>
+            <img src="CSS Logo.png" alt="Java Logo" width="50" height="50">
+            <figcaption>
+                <b> CSS </b>
+            </figcaption>
+            <br>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+<h2 class="navheadings" id="Achievements">
     ACHIEVEMENTS 
 </h2>
-<ul>
-    <li>I completed my 10th in 2017</li>
-    <li>I completed my 12th in 2019</li>
-    <li>I am currently persuaing B.Tech 2nd year from Ajay Kumar Garg Engineering College</li>
-    <li>Java programming on Hackerrank</li>
-    <li>C programming on Hackerrank</li>
-</ul><hr>
-<h2> To Know More About Me </h2>
+<button class="btn"><b>School Level</b></button>
+<div class="dropdown">
+  <button class="btn" style="border-left:1px solid #0d8bf2">
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <h3 class="drop">% in 10th = 94% <br> % in 12th = 92%</h3>
+  </div>
+</div>
+<br>
+<button class="btn"><b>College Level</b></button>
+<div class="dropdown">
+  <button class="btn" style="border-left:1px solid #0d8bf2">
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content">
+    <h3 class="drop">1st Sem = 9 sgpa <br> 2nd Sem = 10 sgpa</h3>    
+  </div>
+</div>
+<br><br>
+<h2 class="navheadings" id="Connect With Me">
+    Connect  
+</h2>
     <table >
         <tbody>
             <tr>
@@ -105,8 +255,8 @@
            </tr>
            <tr>
         <h3 >
-            <a href="https://www.linkedin.com/in/arnav-agarwal-8400a3223/" class="padl">Linkedin</a>
-            <a href="https://github.com/arnav2000agr" >Github</a>
+            <a href="https://www.linkedin.com/in/arnav-agarwal-8400a3223/" target="_blank" class="padl">Linkedin</a>
+            <a href="https://github.com/arnav2000agr" target="_blank" >Github</a>
         </h3>
            </tr>
            <tr>
@@ -115,11 +265,26 @@
            </tr>
            <tr>
             <h3>
-            <a href="https://www.hackerrank.com/arnav2000agr" class="padl">Hackerrank</a> 
-            <a href="https://www.instagram.com/arnav_agarwal14/" > Instagram</a> 
+            <a href="https://www.hackerrank.com/arnav2000agr" target="_blank" class="padl">Hackerrank</a> 
+            <a href="https://www.instagram.com/arnav_agarwal14/" target="_blank"> Instagram</a> 
            </h3>
            </tr>
         </tbody>
     </table>
-</body>
+    <br><br>
+    <footer >
+        <p id="footer1"><b>
+            All Copyrights reserved with the Author.</b><br><br>
+                    <img src="Gmail Logo.png"  alt="Gmail Logo" width="35" height="35">
+                    <figcaption >
+                        <b>arnav2000agr@gmail.com</b>
+                    </figcaption>
+                    <br>
+                    <img src="Phone Logo.png" alt="Phone Logo" width="30" height="30">
+                    <figcaption >
+                        <b>9140758041</b>
+                    </figcaption>
+        </p>
+      </footer>
+    </body>
 </html>
