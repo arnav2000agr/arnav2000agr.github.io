@@ -50,7 +50,7 @@ body{
     background-color:turquoise;
 }
 .topnav {
-        width: 100%;
+    width: 100%;
     background-color: lightblue;
     opacity: 0.75;
     position: fixed;
@@ -59,7 +59,8 @@ body{
   
 }
     .topnav a {
-  float: left;
+
+  float:right;
   color: black;
   text-align: center;
   padding: 10px 10px;
@@ -85,9 +86,9 @@ body{
         background-color:none;
     }
     figcaption{
-
+        letter-spacing: 5px;
         font-size: 30px;
-        font-family: 'Courier New';
+        font-family:serif;
     }
     .navheadings{
         font-size: 3rem;
@@ -108,7 +109,6 @@ body{
     }
     #pic{
         height: 18rem;
-        /*border: 1.5rem solid lightblue;*/
         margin-bottom: 5rem;
 
     }
